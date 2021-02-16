@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets\styles\main.css">
+    <title>Document</title>
+    <script>
+      function changcolor(){
+        var i;
+        for(i=1;i<=6;i++)
+        {
+         document.getElementById("changeTxtColor"+i).style.color=document.getElementById("color").value;
+        }
+        document.getElementById("changeTxtColor").style.backgroundColor=document.getElementById("color2").value;
+      }
+      function changcolor2(){
+        var i;
+        for(i=1;i<=4;i++)
+        {
+         document.getElementById("change_redb"+i).style.backgroundColor=document.getElementById("color2").value;
+        }
+        for(i=1;i<=2;i++){
+        document.getElementById("change_red"+i).style.color=document.getElementById("color2").value;
+        }
+        
+      }
+      function changcolor3(){
+        var i;
+        for(i=1;i<=3;i++)
+        {
+         document.getElementById("block"+i).style.backgroundColor=document.getElementById("color3").value;
+        }
+      }
+    </script>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="left_block">
+            <i id="changeTxtColor1" class="fa fa-ravelry" aria-hidden="true" style="position:fixed;top:20px;font-size:40px;color: rgb(56, 40, 102);"></i>
+            <label class="logo" id="changeTxtColor2">DesignX</label>
+            <div class="text_animate">
+               <h2 data-text="Are you ready to learn?" >Are you ready to learn?</h2>
+            </div>
+            <div class="text">
+              <h1 id="changeTxtColor3">Start Doing new things Daily...</h1>
+              <h4 id="changeTxtColor4">Take a step towards future.</h4>
+            </div>
+            <div class="para">
+               <p id="change_red1">We're non profit with mission to provide world class education for anyone, anywhere</p>
+            </div>
+            <div class="search" id="change_redb1">
+              
+            </div>
+            <div class="search_text" >
+                <h3 id="changeTxtColor5">Search your favourite Courses</h3>
+            </div>
+            <div class="search_box" id="change_redb2"></div>
+            <div class="search_box_text">
+              <p id="changeTxtColor6">Search </p>
+              <i class="fa fa-search" id="change_red2"></i>
+            </div>
+
+        </div>
+        <div class="right_block" id="block1">
+        </div>
+        <div class="right_block_sub" id="block2">
+        </div>
+        <div class="right_block_sub2" id="block3">
+          <img src="https://www.rmit.edu.au/content/dam/rmit/multimedia/video/youtube-images/marketing/online/flexible-study-02-1280x732.jpg" alt="">
+          <div class="color_change">
+            <nav class="colorchange" id="change_redb3">
+                <input type="checkbox" id="check2">
+                <label for="check2" class="checkbtn2">
+                    <i class="fa fa-bars"></i>
+                </label>
+                
+                <ul>
+                    <li><input type="button" value="Change" id="change" onclick="changcolor()">
+                    <input type="color"  id="color" value="#382866"></li>
+                    <li><input type="button" value="Change" id="change" onclick="changcolor2()">
+                    <input type="color"  id="color2" value="#F0481B"></li>
+                    <li><input type="button" value="Change" id="change" onclick="changcolor3()">
+                    <input type="color"  id="color3" value="#8A93F9"></li>
+                </ul>
+             </nav>
+            
+          </div> 
+        </div> 
+        <div class="right_block_sub3">
+              <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fa fa-bars"></i>
+                </label>
+                
+                <ul>
+                    <li><a class="active" href="index.html" id="changeTxtColor">Home</a></li>
+                    <li><a href="#news">Courses</a></li>
+                    <li><a href="#contact">About Us</a></li>
+                    <li><a href="#about">Blog</a></li>
+                    <li ><a class="register" href="#Register" id="change_redb4">Register</a></li>
+                </ul>
+             </nav>
+        </div>
+    </div>
+
+</body>
+</html>
